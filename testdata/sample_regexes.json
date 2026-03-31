@@ -1,0 +1,31 @@
+{
+  "media_cockpit": [
+    "^https:\\/\\/login\\.cbc\\.radio\\-canada\\.ca\\/.*",
+    "^https:\\/\\/www\\.fubo\\.tv(\\/.*)?$",
+    "^https:\\/\\/tver\\.jp\\/.*",
+    "https:\\/\\/www.nuestrocine.mx\\/*",
+    "https:\\/\\/an2-ast\\.amz\\.wtchn\\.net\\/.*",
+    "https:\\/\\/sentry\\.io\\/.*",
+    "^https:\\/\\/dudeperfect\\.com\\/videos\\/.*",
+    "^https:\\/\\/victoryplus\\.com\\/.*",
+    "https:\\/\\/www\\.youku\\.tv\\/.*",
+    "https:\\/\\/www.catchplay.com\\/tw-en\\/.*",
+    "^https:\\/\\/starzplay\\.com(\\/(en.*|ar.*|signup\\/.*)?)?$",
+    "^https:\\/\\/tivo\\.wide\\.net\\/.*",
+    "^https:\\/\\/shahid\\.mbc\\.net\\/(?:en|fr|ar)(?:\\/hub\\/login)?\\/.*",
+    "^https:\\/\\/snapapi\\.cloud\\.vewd\\.com\\/.*",
+    "^https:\\/\\/snap-touch\\.cloud\\.vewd\\.com\\/.*",
+    "^https:\\/\\/(account|about|help|iviewsupport|iview)\\.abc\\.net\\.au\\/.*",
+    "^https:\\/\\/www\\.sbs\\.com\\.au\\/(ondemand|aboutus)\\/.*",
+    "^https:\\/\\/help\\.sbs\\.com\\.au\\/.*",
+    "^https:\\/\\/www\\.coupangplay\\.com\\/.*",
+    "^https:\\/\\/login\\.coupang\\.com\\/.*",
+    "^https:\\/\\/www\\.tving\\.com\\/.*",
+    "^https:\\/\\/wetv\\.vip\\/.*$",
+    "^https:\\/\\/tv.blue.ch\\/*",
+    "^https:\\/\\/login.scl.swisscom.ch\\/*",
+    "^https:\\/\\/registration.scl.swisscom.ch\\/*",
+    "https:\\/\\/xperi_prod:[^@]+@www\\.rtp\\.pt\\/play\\/bigscreen.*",
+    "^https?:\\/\\/(?:www|help|support)\\.paramountplus\\.com\\/.*"
+  ]
+}

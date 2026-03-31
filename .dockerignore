@@ -1,0 +1,11 @@
+.git
+.gitignore
+.vscode
+.DS_Store
+
+bin/
+coverage*
+*.log
+
+README.md
+/memories/

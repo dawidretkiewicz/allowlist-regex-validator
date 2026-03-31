@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regex URL Validator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="hero">
+        <h1>Regex URL Validator</h1>
+        <p>Validate encoded Go-compatible regexes and test them against URL lists.</p>
+      </header>
+
+      <section class="panel inputs">
+        <div class="input-card">
+          <h2>Preset BMW Allowlist</h2>
+          <select id="preset-allowlist">
+            <option value="">None</option>
+          </select>
+          <p id="preset-url" class="hint">Select a preset allowlist to include in validation and matching.</p>
+        </div>
+
+        <div class="input-card">
+          <h2>JSON Regex Object</h2>
+          <label class="toggle">
+            <input id="decode-json" type="checkbox" checked />
+            Decode escaped regexes in JSON mode
+          </label>
+          <textarea id="json-input" placeholder='{"group": ["^https:\\/\\/example\\.com\\/.*$"]}'></textarea>
+        </div>
+
+        <div class="input-card">
+          <h2>Multiline Regexes</h2>
+          <label class="toggle">
+            <input id="decode-multiline" type="checkbox" />
+            Decode escaped regexes in multiline mode
+          </label>
+          <textarea id="regex-lines" placeholder="^https://example.com/.*&#10;^https://foo.bar/login$"></textarea>
+        </div>
+
+        <div class="input-card">
+          <h2>URLs</h2>
+          <textarea id="url-lines" placeholder="https://example.com/a&#10;https://foo.bar/login"></textarea>
+        </div>
+      </section>
+
+      <section class="actions">
+        <button id="validate-btn">Validate Only</button>
+        <button id="match-btn">Validate + Match</button>
+      </section>
+
+      <section class="panel results">
+        <div id="match-block" class="result-block" style="display: none">
+          <h2>Match Summary</h2>
+          <div id="match-summary"></div>
+
+          <div class="matrix-header">
+            <h2>Matrix (URLs x Valid Regexes)</h2>
+            <label class="toggle compact-toggle">
+              <input id="show-matches-only" type="checkbox" checked />
+              Show matches only
+            </label>
+          </div>
+          <div id="matrix-wrap"></div>
+        </div>
+
+        <div id="validation-block" class="result-block">
+          <h2>Validation Summary</h2>
+          <div id="summary" class="summary"></div>
+
+          <h2>Regex Details</h2>
+          <div id="regex-table-wrap"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
